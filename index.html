@@ -204,6 +204,8 @@ a F1 Car"
       const d = new Date();
       document.getElementById("date&time").innerHTML = d;
     </script>
+    <p id="Introduction_InText">Introduction</p>
+    <p id="Conclusion_InText">Conclusion</p>
     <p id="totalWordCount"></p>
 <hr>
 <script>
@@ -222,7 +224,7 @@ a F1 Car"
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AnalysisCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
